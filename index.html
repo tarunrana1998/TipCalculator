@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grapecity Assignment</title>
+
+    <link rel="stylesheet" href="./index.css">
+   
+    
+       
+</head>
+<body>  
+
+    <h1>Tip Calculator</h1>
+    <!-- A single conatiner "block" with two division  "input_values" & "show_result"-->
+    
+    <div class="block">
+
+        <!-- Section for inputting values in the "input_values" division -->
+    <div class="input_values">
+            <label for="amount">Bill</label><br>
+            
+            <input onchange="show()" id="amount" type="number" value=500.00 >
+            <br>
+            <br>
+
+            <label  for="percentage" >Tip %</label><br>
+            <input onchange ="show()" id="percentage" type="number" value=10>
+            <br>
+            <br>
+
+            <label for="people">Number of people</label><br>
+            <input onchange="show()" id="people" type="number"  value=2>
+            <br><br>
+            <button onclick="show()">Check</button>
+            
+            
+    </div>
+
+        <!-- Section for showing the results in the "show-->
+    <div class="show_result">
+
+            <p id="person_tip"></p>
+            <br>
+            <p id="total_tip"></p>
+
+    </div>
+
+   </div>
+
+    <!-- JavaScript File for the calculation -->
+   <script src="./index.js"></script>
+    
+</body>
+</html>
